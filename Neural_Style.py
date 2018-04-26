@@ -36,8 +36,8 @@ def image_loader(image_name):
     return image
 
 
-style = image_loader("images/picasso.jpg").type(dtype)
-content = image_loader("images/dancing.jpg").type(dtype)
+style = image_loader("Pytorch-Tutorials/images/picasso.jpg").type(dtype)
+content = image_loader("Pytorch-Tutorials/images/dancing.jpg").type(dtype)
 
 assert style.size() == content.size(
 ),"we need to import style and content images of the same size"
@@ -201,7 +201,7 @@ print(model)
 
 # input image
 
-input = image_loader("images/dancing.jpg").type(dtype)
+input = image_loader("Pytorch-Tutorials/images/dancing.jpg").type(dtype)
 # if we want to fill it with a white noise:
 #input.data = torch.randn(input.data.size()).type(dtype)
 
